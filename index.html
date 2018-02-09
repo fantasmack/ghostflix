@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Ghostflix</title>
 	<link rel="stylesheet" href="css/resets.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 <body>	
-    <header class="full-container">
-		<nav class="row">
-			<a class="lg-1" href="index.html"><img width="120" src="img/logo.svg" alt="logo"></a> 
-				<ul class="lg-6">
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Programas de TV</a></li>
-					<li><a href="#">Peliculas</a></li>
-					<li><a href="#">Originales</a></li>
-					<li><a href="#">Agregados Recientemente</a></li>
-					<li><a href="#">Mi lista</a></li>
-				</ul>   
-				<ul class="lg-5">
-					<li><a href="#">Buscar</a></li>
-					<li><a href="#">Kids</a></li>
-					<li><a href="#">Campana</a></li>
-					<li><a href="#">Perfil</a></li>
-				</ul>
+	<header>
+		<nav class="menu">
+			<div class="full-container">
+				<div class="row">
+					<a class="lg-1" href="index.html"><img width="120" src="img/logo.svg" alt="logo"></a> 
+					<ul class="lg-6">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Programas de TV</a></li>
+						<li><a href="#">Peliculas</a></li>
+						<li><a href="#">Originales</a></li>
+						<li><a href="#">Agregados Recientemente</a></li>
+						<li><a href="#">Mi lista</a></li>
+					</ul>   
+					<ul class="lg-5">
+						<li><a href="#">Buscar</a></li>
+						<li><a href="#">Kids</a></li>
+						<li><a href="#">Campana</a></li>
+						<li><a href="#">Perfil</a></li>
+					</ul>
+				</div>
+			</div>
 		</nav>
-    </header>
+	</header>
     <main class="main">
-        <section>
-            <hgroup>
-                <h1>Título pequeño</h1>
-                <h2>Tíutlo grande</h2>
-                <h3>Tíutlo mediano</h3>
-            </hgroup>
-            <p>lorem lorem lorem loremlorem lorem</p>
-            <button>boton1</button>
-            <button>boton2</button>
+    	<div class="wrapImg">
+    		<div class="opacidad"></div>
+    		<img src="img/image-hero.jpg">
+    	</div>
+        <section class="full-container descripcion">
+        	<div class="row">
+        		<div class="lg-4">
+		            <hgroup>
+		                <h1>Original de <span>Ghostflix</span></h1>
+		                <h2>Chappie</h2>
+		            </hgroup>
+		            <p>En un esfuerzo por reducir el alto índice de criminalidad en Johannesburgo, la policía de Sudáfrica decide comprar robots blindados al fabricante de armas Tetravaal, los cuales consiguen reducir con éxito la delincuencia. Su inventor, Deon Wilson (Dev Patel) crea en su casa un prototipo de inteligencia artificial, que imita la mente humana hasta el punto de sentir emociones y tener opiniones.</p>
+		            <ul>
+		            	<li><button>Reproducir</button></li>
+		            	<li><button>+ Mi lista</button></li>
+		            </ul>
+	            </div>
+            </div>
         </section>
 	</main>
     <script src="app.js"></script>
