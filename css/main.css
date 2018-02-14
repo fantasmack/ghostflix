@@ -37,14 +37,14 @@ ul a , .toggle {
 }
 
 img {
-  max-width: 100%; 
+  min-width: 100%; 
   display:block; 
   height: auto;
 }
 
 .circle {
   border-radius: 50%;
-  width: 50%;
+  width: 45px;
   padding: 1px;
   background-color: #141414;
 }
@@ -163,5 +163,6 @@ img {
     text-decoration: navajowhite;
     font-size: 25px;
   }
+  .menu { padding: .5rem; }
 }
 .visible{ display: block; }
