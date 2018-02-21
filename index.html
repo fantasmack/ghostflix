@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Ghostflix</title>
 	<link rel="stylesheet" href="css/resets.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -14,16 +14,16 @@
 		<nav id="navbar" class="menu">
 			<div class="full-container">
 				<div class="row">
-					<a class="col-1" href="index.html"><img width="120" src="img/logo.svg" alt="logo"></a> 
-					<ul class="col-6 hide">
+					<a class="lg-1 col-6" href="index.html"><img class="logo" width="120" src="img/logo.svg" alt="logo"></a> 
+					<ul class="lg-6 hide">
 						<li><a href="#">Inicio</a></li>
 						<li><a href="#">Programas de TV</a></li>
-						<li><a href="#">Peliculas</a></li>
+						<li><a href="#">Pelìculas</a></li>
 						<li><a href="#">Originales</a></li>
-						<li><a href="#">Agregados Recientemente</a></li>
+						<li><a href="#">Agregados recientemente</a></li>
 						<li><a href="#">Mi lista</a></li>
-					</ul>   
-					<ul class="col-5 hide">
+					</ul> 
+					<ul class="lg-5 hide">
 						<li><a class="icon-search" href="#"></a></li>
 						<li><a href="#">Kids</a></li>
 						<li><a class="icon-bell-alt" href="#"></a></li>
@@ -34,9 +34,49 @@
 			</div>
 		</nav>
 	</header>
-    <main class="main">
-    	
+	<main class="main">
+		<section class="full-container">
+			<div class="row">
+				<div class="hero">
+					<div class="lg-4 col-6">
+						<div class="descripcion">
+							<hgroup>
+								<h1>Original de Ghostflix</h1>
+								<h2>Chappie</h2>
+							</hgroup>	
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dolorem laborum, commodi enim facere consectetur iusto facilis quam pariatur sit vero cum porro est quod, libero vitae esse sapiente consequuntur!</p>
+<!-- 							<ul>
+								<li><button>Reproducir</button></li>
+								<li><button>Agregar a mi lista</button></li>
+							</ul>	 -->
+						</div>
+					</div>
+					<div class="opacidad">
+						<img src="img/image-hero.jpg" alt="chappie">
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
-    <script src="app.js"></script>
+	<section class="recomendaciones">
+		<h1>Recomendaciones</h1>
+		<div class="container">
+			<div class="row">
+				<figure class="col-4 lg-3">
+					<img src="img/batman.jpg" alt="">
+				</figure>
+				<figure class="col-4 lg-3">
+					<img src="img/batman.jpg" alt="">
+				</figure>
+				<figure class="col-4 lg-3">
+					<img src="img/batman.jpg" alt="">
+				</figure>
+				<figure class="col-4 lg-3">
+					<img src="img/batman.jpg" alt="">
+				</figure>
+			</div>
+		</div>
+	</section>
+<script src="app.js"></script>
 </body>
 </html>

@@ -7,73 +7,114 @@ body{
   background-color: #141414;
 }
 
-.menu{
-  height: auto;
-  background-color: #000;
-}
-ul a , .toggle { 
-  color: #fff; 
-  text-decoration: none;
+.menu, img{ height: auto; }
+
+.menu, .opacidad { background-color: #000; }
+
+.menu, .opacidad, .hero, .hero img, .responsive, .recomendaciones, .row { width: 100%; }
+
+.menu {
+  position: fixed;
+  z-index: 2;
 }
 
-.menu .row ul, .row{ 
-  display: flex; 
+ul, .row { display: flex; }
+
+ul { 
   list-style: none;
+  align-items: center;
 }
-.menu .row ul:nth-child(2){
+ul a , .toggle, .descripcion, .descripcion button, .recomendaciones h1 { color: #fff; }
+
+ul a , .toggle { text-decoration: none; }
+
+.menu .row ul:nth-child(2) {
   padding-left: 25px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.menu .row ul:nth-child(3), .row{ align-items: center; }
+.menu .row ul:nth-child(3){ justify-content: flex-end; }
 
-.menu .row ul:nth-child(3){
-  justify-content: flex-end;
-}
+.menu .row ul:nth-child(3) li, .logo, .recomendaciones h1{ padding-left: 15px; }
 
-.menu .row ul:nth-child(3) li{
-  padding-left: 15px;
-}
-
-img {
-  min-width: 100%; 
-  display:block; 
-  height: auto;
-}
+.menu .row ul:nth-child(3) li:nth-child(4){ padding-right: 15px; }
 
 .circle {
   border-radius: 50%;
-  width: 45px;
+  width: 40px;
   padding: 1px;
   background-color: #141414;
 }
 
+.opacidad {
+  height: 100%;
+  position: relative;
+  opacity: 0.5;
+  top: 0;
+}
+
+.hero{ padding-top: 35px; }
+
+.hero img, .visible{ display: block; }
+
+.descripcion, .recomendaciones{ position: absolute; }
+
+.descripcion {
+  padding-left: 15%;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+hgroup{ line-height: 0; }
+
+hgroup h1 { 
+  font-size: 1rem; 
+  text-transform: uppercase;
+}
+hgroup h2{ font-size: 4.8rem; }
+
+figure{
+  margin: 0;
+  padding: 0;
+}
+
+figure img{ padding: 8px; }
+
+figure img:hover{
+  padding: 0px;
+  transition: padding 1s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.recomendaciones{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(14,14,14,0.99) 25%);
+  top: 75%;
+}       
+
 .container, .full-container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.row { width: 100%;
-}
-.row:before, .row:after{
-  content: " ";
-  display: table;
-}
-
-.row:after{
-  clear: both;
+.row {
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 [class*="col-"],[class*="sm-"],[class*="md-"],
 [class*="lg-"]{
-    position: relative;
-    width: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
+  position: relative;
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+}
 
 .col-1 { width: 8.33333333%; }
 .col-2 { width: 16.66666667%; }
@@ -136,33 +177,58 @@ img {
   .lg-10 { width: 83.33333333%; }
   .lg-11 { width: 91.66666667%; }
   .lg-12 { width: 100%; }
-  .toggle { display: none; }
+  .toggle {display: none;}
   .container { width: 1170px; }
   [class*="lg-"]{ float: left; }
 }
 
-.container:before,
-.container:after,
-.full-container:before,
-.full-container:after{
-  content: " ";
-  display: table;
-}
 
-.container:after,
-.full-container:after{
-  clear: both;
-}
 
-@media (max-width: 768px){
-  .hide { display: none !important; }
+@media (max-width: 1024px){
+  .hide { display: none; }
   .toggle {
     display: block;
     position: absolute;
     right: 25px;
-    text-decoration: navajowhite;
     font-size: 25px;
   }
   .menu { padding: .5rem; }
+  hgroup h1{ font-size: 0.55rem; }
+  hgroup h2{ font-size: 2rem; }
+  .descripcion p {
+    font-size: 13px;
+    height: auto;
+    overflow: hidden;
+  }
+  .descripcion { padding-top: 5%; }
+  .recomendaciones h1 { font-size: 17px; }
+  .recomendaciones { top: 55%; }
+  .recomendaciones .row { flex-wrap: nowrap; }
+
 }
-.visible{ display: block; }
+
+@media (max-width:  414px){
+
+  .logo{ width: 70%; }
+  .descripcion p {
+    font-size: 10px;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .descripcion ul { flex-direction: column; }
+  .descripcion ul li { 
+    width: 100%; 
+    padding-bottom: 5px;
+  }
+  .descripcion button { font-size: 13px;}
+  .descripcion { 
+    padding-top: 10%; 
+    padding-left: 5%;
+  }
+
+  .recomendaciones { top: 28%; }
+  .recomendaciones h1 { font-size: 13px; }
+  .recomendaciones .row { flex-wrap: nowrap; }
+
+}
