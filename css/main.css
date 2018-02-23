@@ -96,6 +96,10 @@ img {
   top: 75%;
 }       
 
+.pie{
+  position: relative;
+}
+
 .container, .full-container {
   margin-right: auto;
   margin-left: auto;
@@ -204,6 +208,7 @@ img {
   .recomendaciones h1 { font-size: 17px; }
   .recomendaciones { top: 55%; }
   .recomendaciones .row { flex-wrap: nowrap; }
+  .recomendaciones .lista { flex-wrap: wrap; }
 
 }
 
@@ -230,5 +235,6 @@ img {
   .recomendaciones { top: 28%; }
   .recomendaciones h1 { font-size: 13px; }
   .recomendaciones .row { flex-wrap: nowrap; }
+  .recomendaciones .lista { flex-wrap: wrap; }
 
 }
